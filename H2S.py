@@ -50,6 +50,12 @@ def text_alert(message):
 found = False
 
 def job():
+    # make a new one for multiple websites.
+    # that runs in paralel and sends the message
+    # bonus if the message can tell which website it founds.
+    # More Bonuses if the message will send the found property
+    # Saving 40euro!
+    
     # get the information of website
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'html.parser')
